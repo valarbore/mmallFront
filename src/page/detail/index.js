@@ -38,7 +38,7 @@ let page = {
                 $pCount.val(currentCount > minCount ? currentCount - 1 : minCount)
             }
         })
-        $(document).on('mouseenter', '.cart-add', function () {
+        $(document).on('click', '.cart-add', function () {
             _cart.addToCart({
                 productId: _this.data.productId,
                 count: $('.p-count').val()

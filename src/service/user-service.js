@@ -10,6 +10,15 @@ let _user = {
             error: reject
         })
     },
+    // 退出登录
+    logout: function ( resolve, reject) {
+        _mm.request({
+            url: '/api/user/logout.do',
+            method: "POST",
+            success: resolve,
+            error: reject
+        })
+    },
     // 检验用户名是否存在
     checkUsername(username,resolve,reject){
         _mm.request({
